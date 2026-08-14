@@ -29,10 +29,10 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'https://daily.yybb.us/'
+baseURL = 'www.huabao-bio.com/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = 'AIOVTUE-雪'          # 站点名称（浏览器标题、页脚版权等）
+title = '游戏大本营'          # 站点名称（浏览器标题、页脚版权等）
 theme = 'aiovtue'           # 主题目录：themes/aiovtue/
 hasCJKLanguage = true      # 启用中文分词（搜索、摘要等）
 enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layouts/robots.txt）
@@ -88,8 +88,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # 站点参数（主题通过 .Site.Params 读取）
 # =============================================================================
 [params]
-  subtitle = '雪'                              # 副标题（首页标题后缀）
-  description = '雨是神的烟花'                  # 站点默认描述（SEO、分享卡片）
+  subtitle = '游'                              # 副标题（首页标题后缀）
+  description = '游戏大本营'                  # 站点默认描述（SEO、分享卡片）
   primaryColor = '#DF9193'                     # 主题主色
   favicon = '/hero/avatar.png'
   defaultCover = '/hero/tt3.png'               # 文章默认头图（无 cover 时使用）
@@ -128,7 +128,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 侧栏 / 关于页作者信息 ---
   [params.author]
-    name = '作者名称'
+    name = 'apple524'
     avatar = '/hero/avatar.png'
     statusEmoji = '🌸'     # 头像角标
     statusMessage = '发呆ing...'
@@ -136,8 +136,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 首页 Hero 大图 / 视频轮播 ---
   # 媒体文件放在 static/hero/，此处写 URL 路径（以 / 开头）
   
-  
-  
+    
   # grid 全站背景网格（仅 params.hero.style = 'grid' 时生效）
   # size：单元格边长（px）；lineOpacity / lineOpacityDark：线条透明度 0~1，越大越深
   [params.hero.grid]
@@ -150,6 +149,16 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     # motto：关闭一言时显示的格言；字符串=固定一句，数组=每次随机一条（打字机效果同一言）
     motto = [
       '雨是神的烟花',
+      '胜负只是一时，热爱才是永恒',
+      '不怕对局落败，只怕放弃上场',
+      '操作可以打磨，心态决定战局',
+      '没有永远的常胜，只有不停的成长',
+      '与其抱怨环境，不如磨炼自身',
+      '游戏可以重来，机会不能虚度',
+      '孤军难破局，协作方得胜',
+      '享受过程，远比执着输赢更重要',
+      '每一次失败，都是通关的铺垫',
+      '适度驰骋游戏，切莫迷失现实',
       '山河远阔，人间烟火',
       '愿你眼中有光，心中有爱',
       '慢慢来，也比较快',
@@ -223,7 +232,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     rotateInterval = 5000  # 左侧随机文章轮播间隔（毫秒）
     [[params.notice.sections]]
       label = '--- 主域名 ---'
-      lines = ['daily.yybb.us', 'day.yybb.us']
+      lines = ['www.huabao-bio.com']
     [[params.notice.sections]]
       label = '--- 这是公告 ---'
       lines = ['公告在配置文件中修改哦']
@@ -236,7 +245,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     color = 'orange'
   [[params.social]]
     name = 'GitHub'
-    link = 'https://github.com/AIOVTUE'
+    link = 'https://github.com/apple524/hugo-theme-aiovtue'
     icon = 'ri:github-line'
     color = '#6e5494'
   [[params.social]]
@@ -257,7 +266,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 归档 / 标签页 ECharts 图表 ---
   [params.charts]
-    archivesStartMonth = '2024-03'   # 归档图起始月份
+    archivesStartMonth = '2024-01'   # 归档图起始月份
     tagsChartLength = 10             # 标签图显示 Top N
 
   # --- 文章页底部赞助按钮 ---
@@ -433,7 +442,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- Live2D 看板娘（左下角 Live2D 角色）---
   # enable：是否启用；单页可在 front matter 写 live2d: false 关闭
   [params.live2d]
-    enable = true
+    enable = false
     minWidth = 768                                # 低于此宽度不加载
     drag = false
     tools = ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit']
