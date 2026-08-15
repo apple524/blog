@@ -29,10 +29,10 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'www.huabao-bio.com/'
+baseURL = 'www.mwifi.top/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = '游戏大本营'          # 站点名称（浏览器标题、页脚版权等）
+title = '资源博客'          # 站点名称（浏览器标题、页脚版权等）
 theme = 'aiovtue'           # 主题目录：themes/aiovtue/
 hasCJKLanguage = true      # 启用中文分词（搜索、摘要等）
 enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layouts/robots.txt）
@@ -89,7 +89,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # =============================================================================
 [params]
   subtitle = '游'                              # 副标题（首页标题后缀）
-  description = '游戏大本营'                  # 站点默认描述（SEO、分享卡片）
+  description = '资源博客'                  # 站点默认描述（SEO、分享卡片）
   primaryColor = '#DF9193'                     # 主题主色
   favicon = '/hero/avatar.png'
   defaultCover = '/hero/tt3.png'               # 文章默认头图（无 cover 时使用）
@@ -232,7 +232,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     rotateInterval = 5000  # 左侧随机文章轮播间隔（毫秒）
     [[params.notice.sections]]
       label = '--- 主域名 ---'
-      lines = ['www.huabao-bio.com']
+      lines = ['www.mwifi.top']
     [[params.notice.sections]]
       label = '--- 这是公告 ---'
       lines = ['公告在配置文件中修改哦']
@@ -245,7 +245,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     color = 'orange'
   [[params.social]]
     name = 'GitHub'
-    link = 'https://github.com/apple524/hugo-theme-aiovtue'
+    link = 'https://github.com/apple524/blog'
     icon = 'ri:github-line'
     color = '#6e5494'
   [[params.social]]
@@ -285,7 +285,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 文章版权声明（CC 协议）---
   [params.license]
-    enable = true
+    enable = false
     type = 'by-nc-sa'      # CC 类型：by / by-nc / by-nc-sa / zero 等
     language = 'zh'
     
@@ -334,7 +334,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 顶栏标题 ---
   [params.navbar]
-    titleParts = ['AIOVTUE-', '雪']   # 顶栏主标题分段（可产生动画效果）
+    titleParts = ['AIOVTUE-', '游']   # 顶栏主标题分段（可产生动画效果）
     subTitle = '雨是神的烟花'
     offset = 0
 
@@ -403,10 +403,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
       name = '动态'
       url = '/moments/'
       icon = 'ant-design:compass-filled'
-    [[params.menu.main.items]]
-      name = '追番'
-      url = '/bangumi/'
-      icon = 'mdi:television-play'
+    #[[params.menu.main.items]]
+    #  name = '追番'
+    #  url = '/bangumi/'
+    #  icon = 'mdi:television-play'
   [[params.menu.main]]
     name = '留言'
     url = '/comment/'
@@ -471,7 +471,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 团团猫动态鼠标指针 ---
   # enable：是否启用；单页可在 front matter 写 mouse: false 关闭
   [params.mouse]
-    enable = true
+    enable = false
     path = '/mouse/tuantuanma/'                  # 预压缩 WebP + manifest.json（见 static/mouse/tuantuanma/）
     scale = 0.25                                  # manifest 内记录的缩放；重新压缩时改 compress-mouse 脚本参数
 
