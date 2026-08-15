@@ -4,6 +4,9 @@
 node_modules/
 .DS_Store
 Thumbs.db
+# Hugo 可执行文件与本地工作目录，不进版本库
+hugo.exe
+.workbuddy/
 /content/.obsidian
 /data/links_rss.json
 /data/bangumi.json
