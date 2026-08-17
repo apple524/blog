@@ -9,6 +9,12 @@ source: local
 tags:
   - 壁纸
 photos:
+  - url: "https://easyimg.tytus.mobi:16666/i/bf22473b-58a6-41cf-a2fc-44a4d10ac822.jpg"
+    date: 2026-8-16
+  - url: "https://easyimg.tytus.mobi:16666/i/05cbc7cf-c9be-43cc-af81-d5445740bde2.jpg"
+    date: 2026-8-16
+  - url: "https://easyimg.tytus.mobi:16666/i/ed9954bc-0aaf-416c-bf6a-6a0f5b0c7445.jpg"
+    date: 2026-8-16
   - url: "https://r2tc.20030327.xyz/file/博客/主题/1780640308182_AWDSV.jpg"
     date: 2026-6-1
   - url: "https://r2tc.20030327.xyz/file/博客/主题/1780643226230_wallhaven-9d1yjk.png"
