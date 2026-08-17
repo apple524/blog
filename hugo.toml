@@ -423,10 +423,14 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     icon = 'ant-design:idcard-filled'
     weight = 6
   [[params.menu.main]]
-    name = '课程表'
+    name = '项目'
     url = '/class.html'
-    icon = 'ant-design:calendar-filled'
+    icon = 'ant-design:project-filled'
     weight = 7
+    [[params.menu.main.items]]
+      name = '课程表'
+      url = '/class.html'
+      icon = 'ant-design:calendar-filled'
 
 # --- 音乐播放器（APlayer + Meting.js）---
   # enable：是否显示播放器；单页可在 front matter 写 musicPlayer: false 关闭
