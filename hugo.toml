@@ -90,6 +90,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # 站点参数（主题通过 .Site.Params 读取）
 # =============================================================================
 [params]
+  # Google AdSense 广告：填写 client 后全站页面 <head> 自动注入广告脚本；留空/删除则不加载
+  [params.adsense]
+    client = 'ca-pub-7745986861005686'
   subtitle = '游'                              # 副标题（首页标题后缀）
   description = '资源博客'                  # 站点默认描述（SEO、分享卡片）
   primaryColor = '#DF9193'                     # 主题主色

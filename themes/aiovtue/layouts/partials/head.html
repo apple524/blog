@@ -76,3 +76,8 @@
 {{- partial "excalidraw-script-meta.html" . -}}
 {{- partial "gallery-post-script-meta.html" . -}}
 <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js" defer></script>
+{{- /* Google AdSense 广告脚本：在 hugo.toml 设置 params.adsense.client 即可启用，留空则不加载 */ -}}
+{{- with site.Params.adsense.client -}}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ . }}"
+     crossorigin="anonymous"></script>
+{{- end -}}
