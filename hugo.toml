@@ -29,7 +29,9 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'www.mwifi.top/'
+# 注意：必须带协议头（https://），否则 Hugo 会把 'www.mwifi.top/' 当成“相对子路径”，
+# 导致 relURL 生成的资源地址变成 /www.mwifi.top/... 而在本地/子路径下 404（字体等加载失败、排版错乱）。
+baseURL = 'https://www.mwifi.top/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
 title = '资源博客'          # 站点名称（浏览器标题、页脚版权等）
@@ -431,6 +433,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
       name = '课程表'
       url = '/class.html'
       icon = 'ant-design:calendar-filled'
+    [[params.menu.main.items]]
+      name = '白板'
+      url = '/draw/'
+      icon = 'ant-design:edit-filled'
 
 # --- 音乐播放器（APlayer + Meting.js）---
   # enable：是否显示播放器；单页可在 front matter 写 musicPlayer: false 关闭
