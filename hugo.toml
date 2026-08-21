@@ -105,6 +105,11 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   [params.post]
     fontSize = "1.1rem"                          # 正文字号（rem，如 0.95rem / 1.1rem）
 
+  # --- 文章末尾「资源下载」分类区块（数据在每篇文章 front matter 的 resources 字段）---
+  [params.resources]
+    enable = true                                # 是否启用；设为 false 全站关闭
+    title = '资源下载'                             # 区块标题（如「下载资源」「相关资源」）
+
   # --- 友链页 ---
   [params.links]
     layout = 'preview'                        # preview：卡片截图 | simple：长条头像+悬停预览

@@ -1,0 +1,89 @@
+{{- /* 文章末尾「资源下载」分类区块：数据来自 front matter 的 resources 字段
+       示例：
+       resources:
+         - category: 网盘下载
+           items:
+             - name: 百度网盘
+               url: https://pan.baidu.com/xxx
+               code: abcd          # 可选：提取码
+             - name: 夸克网盘
+               url: https://pan.quark.cn/xxx
+         - category: 磁力链接
+           items:
+             - name: 磁力链
+               url: magnet:?xt=urn:btih:xxxx
+*/ -}}
+{{- if and (default true site.Params.resources.enable) .Params.resources -}}
+{{- $title := default "资源下载" site.Params.resources.title -}}
+<section class="sakura-post-resources" aria-label="{{ $title }}">
+  <style>
+    .sakura-post-resources{
+      margin:28px 0 8px;
+      padding:20px 22px;
+      background:color-mix(in srgb, var(--sakura-color-primary) 6%, #fafafa);
+      border:1px solid var(--sakura-color-border);
+      border-radius:12px;
+    }
+    .sakura-post-resources__title{
+      margin:0 0 14px;
+      font-size:1.05rem;
+      font-weight:700;
+      color:var(--sakura-color-deep,#333);
+      display:flex;align-items:center;gap:8px;
+    }
+    .sakura-post-resources__title::before{
+      content:"";width:4px;height:1.05rem;border-radius:3px;
+      background:var(--sakura-color-primary);display:inline-block;
+    }
+    .sakura-post-resources__groups{display:grid;gap:16px;}
+    .sakura-post-resources__group{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;}
+    .sakura-post-resources__cat{
+      flex:0 0 auto;min-width:84px;
+      font-weight:600;color:var(--sakura-color-primary);
+      font-size:.95rem;
+    }
+    .sakura-post-resources__list{
+      list-style:none;margin:0;padding:0;flex:1 1 auto;
+      display:flex;flex-wrap:wrap;gap:8px 10px;
+    }
+    .sakura-post-resources__item{display:inline-flex;align-items:center;gap:6px;}
+    .sakura-post-resources__link{
+      display:inline-block;padding:4px 12px;
+      background:var(--sakura-color-background,#fff);
+      border:1px solid var(--sakura-color-border);
+      border-radius:999px;
+      color:var(--sakura-color-text,#4c4948);
+      text-decoration:none;font-size:.9rem;
+      transition:all .2s ease;
+    }
+    .sakura-post-resources__link:hover{
+      color:#fff;background:var(--sakura-color-primary);
+      border-color:var(--sakura-color-primary);
+    }
+    .sakura-post-resources__code{
+      font-size:.8rem;color:var(--sakura-color-text-muted,#888);
+    }
+    .sakura-post-resources__code code{
+      background:rgba(0,0,0,.05);padding:1px 6px;border-radius:4px;
+    }
+  </style>
+  <h3 class="sakura-post-resources__title">{{ $title }}</h3>
+  <div class="sakura-post-resources__groups">
+  {{- range .Params.resources -}}
+    {{- if .category -}}
+    <div class="sakura-post-resources__group">
+      <span class="sakura-post-resources__cat">{{ .category }}</span>
+      <ul class="sakura-post-resources__list">
+      {{- range .items -}}
+        <li class="sakura-post-resources__item">
+          <a class="sakura-post-resources__link" href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+          {{- with .code -}}<span class="sakura-post-resources__code">提取码：<code>{{ . }}</code></span>{{- end -}}
+        </li>
+      {{- end -}}
+      </ul>
+    </div>
+    {{- end -}}
+  {{- end -}}
+  </div>
+</section>
+{{- end -}}
