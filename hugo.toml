@@ -282,8 +282,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 文章页底部赞助按钮 ---
   [params.sponsor]
     enable = true
-    title = '我很可爱，请给我钱！'
-    description = '我很可爱哦，可以给我点钱钱嘛~'
+    title = '鼎立一下嘛！'
+    description = '鼎立一下嘛！'
     [[params.sponsor.methods]]
       name = '支付宝'
       url = '/img/zfb.png'
