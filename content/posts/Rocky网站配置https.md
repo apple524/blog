@@ -14,18 +14,18 @@ tocEndLevel: 4
 ---
 <br>
 
-配置 HTTPS（Let's Encrypt）
-安装 Certbot
-CentOS 7：
-```sudo yum install -y certbot python2-certbot-nginx```
-CentOS Stream 8+ / Rocky Linux 8+：
-```sudo dnf install -y certbot python3-certbot-nginx```
+配置 HTTPS（Let's Encrypt）<br>
+安装 Certbot<br>
+CentOS 7：<br>
+```sudo yum install -y certbot python2-certbot-nginx```<br>
+CentOS Stream 8+ / Rocky Linux 8+：<br>
+```sudo dnf install -y certbot python3-certbot-nginx```<br>
 
-申请并自动配置 SSL 证书
+申请并自动配置 SSL 证书<br>
 ```
 sudo certbot --nginx -d www.your-domain.com -d your-domain.com
+```<br>
+验证证书自动续期<br>
 ```
-验证证书自动续期
-```
-sudo certbot renew --dry-run```
+sudo certbot renew --dry-run```<br>
 
