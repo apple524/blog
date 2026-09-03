@@ -9,6 +9,8 @@ source: local
 tags:
   - 壁纸
 photos:
+  - url: "https://easyimg.tytus.mobi:16666/i/c6ea8cc3-c7f8-4f35-9c3d-b8b709cd5ea9.jpg"
+    date: 2026-9-3
   - url: "https://easyimg.tytus.mobi:16666/i/2de13ec6-2eb6-4086-baaa-310db48b6b18.png"
     date: 2026-9-1
   - url: "https://easyimg.tytus.mobi:16666/i/0aab9c37-165f-44ce-92b7-28ac3f3fa819.png"
