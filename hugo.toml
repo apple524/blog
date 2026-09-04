@@ -315,12 +315,12 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # provider 可选：waline | twikoo
   # 单篇文章可在 front matter 写 comment: false 关闭评论区
   [params.comment]
-    provider = 'twikoo'
+    provider = 'waline'
 
   # --- Waline 评论（https://waline.js.org/）---
   # 仅当 params.comment.provider = waline 时生效；当前使用 twikoo，此处留作切换备用
   [params.waline]
-    serverURL = 'https://your-waline-url'                                # 切换到 waline 时填写服务端地址（末尾不要加 /）
+    serverURL = 'https://api.zcservice.houlang.cloud/comment/33cba64fcd0f9d428c03924793b40c5d'                                # 切换到 waline 时填写服务端地址（末尾不要加 /）
     placeholder = '分享你的想法...'
 
   # --- Twikoo 评论（仅当 params.comment.provider = twikoo 时生效）---
